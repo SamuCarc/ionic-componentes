@@ -1,0 +1,26 @@
+<app-header titulo="Avatar"></app-header>
+
+<ion-content>
+
+  <ion-chip color="primary" *ngFor="let i of items">
+    <ion-avatar>
+      <ion-img [src]="i.src"></ion-img>
+    </ion-avatar>
+    <ion-label>
+      {{ i.name }}
+    </ion-label>
+
+  </ion-chip>
+
+  <ion-list>
+    <ion-item *ngFor="let i of items">
+      <ion-avatar slot="start">
+        <ion-img [src]="i.src"></ion-img>
+      </ion-avatar>
+      <ion-label>
+        {{ i.name }}
+      </ion-label>
+    </ion-item>
+  </ion-list>
+
+</ion-content>

@@ -1,0 +1,42 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+
+    <ion-buttons slot="start">
+      <ion-back-button text="Regresar" defaultHref="/inicio"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Botones y Router</ion-title>
+
+    <ion-buttons slot="end">
+      <ion-button color="primary">
+        <ion-icon name="heart"></ion-icon>
+      </ion-button>
+      <ion-button color="primary">
+        <ion-icon name="star"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+
+  <ion-button size="small" expand="full">Small</ion-button>
+  <ion-button size="default" expand="full">Default</ion-button>
+  <ion-button size="large" expand="full">Large</ion-button>
+
+  <ion-button class="mt" expand="full" routerLink="/avatar" color="tertiary">Link a Avatar</ion-button>
+
+    <ion-row class="mt">
+      <ion-col size="6">
+        <ion-button expand="full" routerLink="/avatar" color="tertiary">Link a Avatar 1</ion-button>
+      </ion-col>
+      <ion-col size="6">
+        <ion-button expand="full" routerLink="/avatar" color="tertiary">Link a Avatar 2</ion-button>
+      </ion-col>
+    </ion-row>
+
+  <ion-button fill="outline" class="mt">Outline</ion-button>
+  <ion-button fill="clear" class="mt">Clear</ion-button>
+  <ion-button fill="solid" class="mt">Solid</ion-button>
+
+</ion-content>
